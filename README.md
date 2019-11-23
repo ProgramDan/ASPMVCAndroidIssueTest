@@ -5,9 +5,9 @@ This is a sample .NET MVC Project using .NET 4.6.2.  This is a base project that
 This project is to show case an interest issue I have come across on a MVC project that I manage.  I run a website that has a Basket system that allows users to add items to their basket, once they have done this their are redirected to a basket detail page where they can remove/amend the item or make a payment.
 
 There seems to be an issue only on Android devices which causes a button on the screen to be clicked on load of the basket detail page.  By this I mean:
-  1 - User adds item to their Basket
-  2 - Item is added to the User's Basket and is redirected to the Basket Detail Page
-  3 - On Load, Android devices clicks the Remove button against the item, actioning the delete of the item from the basket without actually changing the page the user is viewing.
+1. User adds item to their Basket
+2. Item is added to the User's Basket and is redirected to the Basket Detail Page
+3. On Load, Android devices clicks the Remove button against the item, actioning the delete of the item from the basket without actually changing the page the user is viewing.
   
 This causes issues because any action that happens next fails as the item is no longer in the users basket.
 
