@@ -1,0 +1,22 @@
+﻿@model List<AndroidIssueTest.Models.BasketItem>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+    <table>
+        <tr>
+            <th>Item</th>
+            <td>@item.Description</td>
+        </tr>
+        <tr>
+            <th>Amount</th>
+            <td>@item.Amount.ToString("C")</td>
+        </tr>
+        <tr>
+            @Html.ActionLink("Remove", "Remove", new { basketItemID = item.BasketItemID })
+        </tr>
+    </table>
+}
