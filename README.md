@@ -14,3 +14,5 @@ This causes issues because any action that happens next fails as the item is no 
 I have been able to replicate this with a base MVC project which contains a Basket Detail page and a Remove action.  If I debug the project with a Breakpoint on the BasketDetail & Remove ActionResults and then navigate to the BasketDetail page using an Android device, You can see that the BasketDetail is run and then return to the user and then half a second later the action for Remove is actioned.
 
 The first time I tested this it happened as explained above, however, occasionally this did not always occur (probably around 75% of the time).
+
+The Android Mobile that this was tested on is a using Android 8.1.
